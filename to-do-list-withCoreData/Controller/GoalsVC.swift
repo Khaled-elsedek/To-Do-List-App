@@ -83,7 +83,7 @@ extension GoalsVC {
         guard let managedContext = appDelegate?.persistentContainer.viewContext else {return}
         let chosenGoal = goals[indexPath.row]
         if chosenGoal.goalProgress < chosenGoal.goalCompletionValue {
-             chosenGoal.goalProgress = chosenGoal.goalProgress + 1
+             chosenGoal.goalCompletionValue = chosenGoal.goalCompletionValue - 1
         } else {
             return
         }

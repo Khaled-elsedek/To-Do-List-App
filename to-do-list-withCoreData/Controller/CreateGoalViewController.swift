@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreateGoalVC: UIViewController , UITextViewDelegate {
+class CreateGoalViewController: UIViewController , UITextViewDelegate {
 
     @IBOutlet weak var goalTxtView: UITextView!
     @IBOutlet weak var shortTermBtn: UIButton!

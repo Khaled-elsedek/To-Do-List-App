@@ -17,6 +17,6 @@ class GoalCell: UITableViewCell {
     func configureCell(goal: Goal){
         self.goalDescreptionLbl.text = goal.goalDescription
         self.goalTypeLbl.text = goal.goalType
-        self.goalProgressLbl.text = String(describing: goal.goalProgress)
+        self.goalProgressLbl.text = String(describing: goal.goalCompletionValue)
     }
 }
